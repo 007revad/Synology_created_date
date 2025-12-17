@@ -45,7 +45,12 @@ If the script won't run check the following:
 
 ### Screenshots
 
-<p align="center">Running the script with DSM set to German, then English, then French.</p>
+<p align="center">After running in task scheduler.</p>
+<p align="center"><img src="/images/view-result.png"></p>
+
+<br>
+
+<p align="center">Running the script via SSH with DSM set to German, then English, then French.</p>
 <p align="center"><img src="/images/image1.png"></p>
 
 <br>
