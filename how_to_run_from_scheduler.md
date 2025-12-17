@@ -29,7 +29,7 @@ To run a script from Task Scheduler follow these steps:
 <p align="center">Step 4</p>
 <p align="center"><img src="images/schedule-4.png"></p>
 
-**To view the result:**
+## To view the result:
 
 1. Click on the task again.
 2. Click on the Action button then click View result.
