@@ -22,10 +22,8 @@ See [How to run from task scheduler](https://github.com/007revad/Synology_create
 
 ### To run the script via SSH
 
-[How to enable SSH and login to DSM via SSH](https://kb.synology.com/en-global/DSM/tutorial/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet)
-
 ```YAML
-sudo -s /volume1/scripts/syno_created_date.sh
+/volume1/scripts/syno_created_date.sh
 ```
 
 **Note:** Replace /volume1/scripts/ with the path to where the script is located.
@@ -47,10 +45,10 @@ If the script won't run check the following:
 
 ### Screenshots
 
-<!--- <p align="center">Running the script with DSM set to German, then English, then French.</p> --->
-<p align="center"><img src="/images/IMAGE_NAME.png"></p>
+<p align="center">Running the script with DSM set to German, then English, then French.</p>
+<p align="center"><img src="/images/image1.png"></p>
 
 <br>
 
-<!--- <p align="center">And all the available languages</p> --->
-<p align="center"><img src="/images/IMAGE_NAME.png"></p>
+<p align="center">And all the available languages</p>
+<p align="center"><img src="/images/all_languages.png"></p>
