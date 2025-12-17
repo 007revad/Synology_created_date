@@ -1,4 +1,4 @@
-# <img src="images/icon.png" width="40"> Heading goes here
+# Synology created date
 
 <a href="https://github.com/007revad/Synology_created_date/releases"><img src="https://img.shields.io/github/release/007revad/Synology_created_date.svg"></a>
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2F007revad%2FSynology_created_date&label=Visitors&icon=github&color=%23198754&message=&style=flat&tz=Australia%2FSydney)
@@ -8,7 +8,7 @@
 
 ### Description
 
-Description goes here
+Script to show you the created year and month of your Synology NAS or expansion unit.
 
 ### Download the script
 
