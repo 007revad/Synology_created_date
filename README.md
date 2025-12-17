@@ -10,6 +10,8 @@
 
 Script to show you the created year and month of your Synology NAS or expansion unit.
 
+Outputs the result in the language you have set it in DSM.
+
 ### Download the script
 
 1. Download the latest version _Source code (zip)_ from https://github.com/007revad/Synology_created_date/releases
