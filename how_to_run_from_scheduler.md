@@ -7,12 +7,11 @@ To run a script from Task Scheduler follow these steps:
 1. Go to **Control Panel** > **Task Scheduler** > click **Create** > and select **Scheduled Task**.
 2. Select **User-defined script**.
 3. Enter a task name.
-4. Select **root** as the user (The script needs to run as root).
-5. Untick **Enable** so it does **not** run on a schedule.
-6. Click **Task Settings**.
-7. In the box under **User-defined script** type the path to the script. 
-    - e.g. If you saved the script to a shared folder on volume 1 called "scripts" you'd type: **/volume1/scripts/videostation_for_722.sh**
-8. Click **OK** to save the settings.
+4. Untick **Enable** so it does **not** run on a schedule.
+5. Click **Task Settings**.
+6. In the box under **User-defined script** type the path to the script. 
+    - e.g. If you saved the script to a shared folder on volume 1 called "scripts" you'd type: **/volume1/scripts/syno_created_date.sh**
+7. Click **OK** to save the settings.
 9. Click on the task - but **don't** enable it - then click **Run**.
 10. Once the script has run you can delete the task, or keep in case you need it again.
 
@@ -29,3 +28,11 @@ To run a script from Task Scheduler follow these steps:
 
 <p align="center">Step 4</p>
 <p align="center"><img src="images/schedule-4.png"></p>
+
+**To view the result:**
+
+1. Click on the task again.
+2. Click on the Action button then click View result.
+
+<p align="center"><img src="images/view-result.png"></p>
+
