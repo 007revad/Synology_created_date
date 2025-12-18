@@ -12,7 +12,7 @@
 # maillang="enu"
 # supplang="enu,cht,chs,krn,tha,ger,fre,ita,spn,jpn,dan,nor,sve,nld,rus,plk,ptb,ptg,hun,trk,csy"
 
-scriptver="v1.1.1"
+scriptver="v1.1.2"
 script=Synology_created_date
 repo="007revad/Synology_created_date"
 #scriptname=syno_created_date
@@ -63,12 +63,16 @@ decode(){
 get_date(){
     local serial="$1"
     if [[ $2 == "old" ]]; then
-        # Old format serial number
+        # Old format serial number: B5J6N00567 or 72DBN00554
         decode "${serial:0:1}"  # Convert 1st character
-        year="$n"
+        if [[ ${#n} = 1 ]]; then
+            year="0$n"
+        else
+            year="$n"
+        fi
         decode "${serial:1:1}"  # Convert 2nd character
     else
-        # Current format serial number
+        # Current format serial number: 163xxxxxxxxxx or 20Cxxxxxxxxxx
         year="${serial:0:2}"    # First 2 characters
         decode "${serial:2:1}"  # Convert 3rd character
     fi
@@ -84,11 +88,14 @@ get_date(){
 
 convert_serial(){
     local serial="$1"
-    if [[ ${serial:0:1} =~ [0-9] ]]; then
+    if [[ ${serial:0:1} =~ [0-9] ]] && [[ ${#serial} -gt 10 ]]; then
         # Is current serial number format
         get_date "$serial" current
     elif [[ ${serial:0:1} =~ [A-V] ]]; then
         # Is old serial number format
+        get_date "$serial" old
+    elif [[ ${serial:0:1} =~ [0-9] ]] && [[ ${#serial} -eq 10 ]]; then
+        # Is original serial number format
         get_date "$serial" old
     else
         echo "Unknown serial number format: $serial"
