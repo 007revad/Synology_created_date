@@ -1,2 +1,8 @@
+v1.1.1
+- Added code to decode expansion unit serial numbers.
+- Changed to be 11 seconds faster for models without syno_slot_mapping command.
+- Bug fix for old models with serial numbers starting with a letter.
+- Bug fix for when language is set to "Browser default".
+
 v1.0.0
 - First release.
