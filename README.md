@@ -12,6 +12,8 @@ Script to show you the created year and month of your Synology NAS or expansion 
 
 Outputs the result in the language you have set it in DSM.
 
+> Note: To decode an expansion unit's serial number you need to run the script via SSH and enter the first 3 characters of the expansion unit's serial number when asked.
+
 ### Download the script
 
 1. Download the latest version _Source code (zip)_ from https://github.com/007revad/Synology_created_date/releases
@@ -49,6 +51,11 @@ If the script won't run check the following:
 
 <p align="center">After running in task scheduler.</p>
 <p align="center"><img src="/images/view-result.png"></p>
+
+<br>
+
+<p align="center">Running via SSH with expansion unit.</p>
+<p align="center"><img src="/images/eunit.png"></p>
 
 <br>
 
